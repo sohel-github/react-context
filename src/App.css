@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  width: 500px;
+  padding: 40px;
+  background: #4d245d;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header h1{
+  text-align: center;
+  padding: 10px 0;
+}
+.header p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.book-list ul li{
+  display: block;
+  padding: 15px;
+  background: #321040;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.book-list ul li:hover{
+  background: #291033;
+}
+.no-books{
+  background: #b12626;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.book-form{
+  display: block;
+}
+.book-form input{
+  width: 80%;
+  padding: 10px;
+  color: #fff;
+  border:none;
+  display: block;
+  background: #270f31;
+  margin-bottom:10px;
+}
+.book-form input:focus{
+  outline: none;
+  background: #340e44;
+  color: #fff;
+}
+.book-form button{
+  width: 30%;
+  padding: 10px;
+  color: #fff;
+  border:none;
+  display: block;
+  background: #281131;
 }
